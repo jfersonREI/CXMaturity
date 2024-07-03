@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import AppContainer from "./components/AppContainer/AppContainer";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         >
           Learn React x
         </a>
+
+        <AppContainer>dfsfsf</AppContainer>
       </header>
     </div>
   );
