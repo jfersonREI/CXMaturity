@@ -5,30 +5,25 @@
   background-color: $color-white;
   border-radius: $border-radius-lg;
   width: 100%;
-  padding-right: $space-600 $space-600;
-  padding-left: $space-600 $space-600;
+  padding: $space-600;
   margin-right: auto;
   margin-left: auto;
+  box-shadow: 0px 32px 64px 0px $alpha-black-5;
 
   @include smMinBreakPoint {
-    background-color: red;
     max-width: $container-max-width-sm;
   }
 
   @include mdMinBreakPoint {
-    background-color: seagreen;
     max-width: $container-max-width-md;
   }
   @include lgMinBreakPoint {
-    background-color: green;
     max-width: $container-max-width-lg;
   }
   @include xlMinBreakPoint {
-    background-color: plum;
     max-width: $container-max-width-xl;
   }
   @include xxlMinBreakPoint {
-    background-color: purple;
     max-width: $container-max-width-xxl;
   }
 }
