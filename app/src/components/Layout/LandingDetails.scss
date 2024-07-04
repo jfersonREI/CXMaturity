@@ -10,6 +10,11 @@
   &__header {
     background-color: transparent;
   }
+  &__logo {
+    width: 58px;
+    height: 48px;
+    display: block;
+  }
   &__body {
     background-color: beige;
     display: flex;
@@ -43,7 +48,7 @@
   }
   &__copy {
     color: $color-neutral-gray-600;
-    font-size: $font-size-text-base;
+    font-size: $font-size-text-md;
     font-weight: $font-weight-regular;
     line-height: 22.5px;
   }
