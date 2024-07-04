@@ -1,9 +1,9 @@
-import AppContainer from "./components/AppContainer/AppContainer";
+import Container from "./components/Container/Container";
 
 function App() {
   return (
     <div className="App">
-      <AppContainer>AASDASDASDASD</AppContainer>
+      <Container>AASDASDASDASD</Container>
     </div>
   );
 }

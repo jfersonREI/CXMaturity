@@ -1,6 +1,6 @@
 import React from "react";
-import "./AppContainer.scss";
+import "./Container.scss";
 
-export default function AppContainer(props) {
+export default function Container(props) {
   return <div className="app-container">{props.children}</div>;
 }
