@@ -1,0 +1,16 @@
+@import "../../sassStyles/mixins";
+@import "../../sassStyles/variables";
+
+.landing-cover {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 0 $border-radius-lg $border-radius-lg 0;
+  background-color: pink;
+  overflow: hidden;
+  position: relative;
+}
+.landing-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
