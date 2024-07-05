@@ -7,16 +7,6 @@
   margin-right: auto;
   margin-left: auto;
 
-  @include smMinBreakPoint {
-    max-width: $container-max-width-sm;
-  }
-
-  @include mdMinBreakPoint {
-    max-width: $container-max-width-md;
-  }
-  @include lgMinBreakPoint {
-    max-width: $container-max-width-lg;
-  }
   @include xlMinBreakPoint {
     max-width: $container-max-width-xl;
   }
