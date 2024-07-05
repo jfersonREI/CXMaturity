@@ -4,10 +4,13 @@
 .landing-cover {
   flex: 1 0 0;
   align-self: stretch;
-  border-radius: 0 $border-radius-lg $border-radius-lg 0;
-  background-color: pink;
+  border-radius: $border-radius-lg;
   overflow: hidden;
   position: relative;
+
+  @include mdMinBreakPoint {
+    border-radius: 0 $border-radius-lg $border-radius-lg 0;
+  }
 }
 .landing-image {
   width: 100%;
