@@ -17,6 +17,21 @@ const LandingDetails = (props) => {
           <p className="landing-details__title">{props.title}</p>
         </div>
         <div className="landing-details__copy">{props.copy}</div>
+        <div className="landing-details__buttons">
+          <button>Take the CX maturity assessment</button>
+        </div>
+      </div>
+      <div className="landing-details__footer">
+        <div className="landing-details__footer-item">
+          <span className="landing-details__footer-item-header">
+            Time to complete
+          </span>
+          <span>{props.timeComplete}</span>
+        </div>
+        <div className="landing-details__footer-item">
+          <span className="landing-details__footer-item-header">Due date:</span>
+          <span>{props.dueDate}</span>
+        </div>
       </div>
 
       {props.children}

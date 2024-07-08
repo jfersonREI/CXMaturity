@@ -9,14 +9,16 @@ function App() {
         logo={Logo}
         logoAlt="REI"
         subtitle="Subtitle"
-        title="Assess your project’s CX maturity level"
+        title="Assess your project's CX maturity level"
         copy="Each year, we engage with project managers to gain valuable insights 
             into project performance, specifically focusing on customer experience (CX). 
             Our project maturity assessment process ensures that every REI project is on the 
-            right track. Let’s elevate project success together!"
+            right track. Let's elevate project success together!"
         image={CoverImage}
         alt="CX Maturity Assessemnt"
         badge="CX"
+        timeComplete="15 minutes"
+        dueDate="5/23/25"
       ></Landing>
     </div>
   );

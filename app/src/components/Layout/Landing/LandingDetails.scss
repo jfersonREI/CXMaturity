@@ -51,4 +51,27 @@
     font-weight: $font-weight-regular;
     line-height: 22.5px;
   }
+  &__buttons {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: $space-400;
+  }
+  &__footer {
+    display: flex;
+    flex-flow: row wrap;
+    gap: $space-700;
+  }
+  &__footer-item {
+    display: flex;
+    flex-flow: column wrap;
+    gap: $space-050;
+    font-size: $font-size-text-sm;
+    color: $color-neutral-slate-800;
+  }
+  &__footer-item-header {
+    color: $color-secondary-purple-800;
+    text-transform: uppercase;
+    font-size: $font-size-text-xs;
+    font-weight: $font-weight-medium;
+  }
 }
