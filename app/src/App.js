@@ -19,7 +19,7 @@ function App() {
         badge="CX"
         timeComplete="15 minutes"
         dueDate="5/23/25"
-      ></Landing>
+      />
     </div>
   );
 }
