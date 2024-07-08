@@ -1,12 +1,15 @@
 import React from "react";
 import "./LandingDetails.scss";
-import logo from "../../assets/logo-rei.svg";
 
 const LandingDetails = (props) => {
   return (
     <div className="landing-details">
       <div className="landing-details__header">
-        <img src={logo} className="landing-details__logo" alt="REI" />
+        <img
+          src={props.logo}
+          className="landing-details__logo"
+          alt={props.logoAlt}
+        />
       </div>
       <div className="landing-details__body">
         <div className="landing-details__body-header">

@@ -1,6 +1,5 @@
 import React from "react";
 import "./LandingCover.scss";
-
 import LandingBadge from "./LandingBadge";
 
 const LandingCover = ({ badge, ...props }) => {
