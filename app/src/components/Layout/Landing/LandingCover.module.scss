@@ -1,9 +1,8 @@
 @import "../../../sassStyles/mixins";
 @import "../../../sassStyles/variables";
 
-.landing-cover {
+.landingCover {
   flex: 1 0 0;
-  align-self: stretch;
   border-radius: $border-radius-lg;
   overflow: hidden;
   position: relative;
@@ -12,7 +11,7 @@
     border-radius: 0 $border-radius-lg $border-radius-lg 0;
   }
 }
-.landing-image {
+.landingImage {
   width: 100%;
   height: 100%;
   display: block;

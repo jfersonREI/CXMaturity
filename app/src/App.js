@@ -8,7 +8,7 @@ function App() {
       <Landing
         logo={Logo}
         logoAlt="REI"
-        subtitle="Subtitle"
+        subtitle="CX Maturity"
         title="Assess your project's CX maturity level"
         copy="Each year, we engage with project managers to gain valuable insights 
             into project performance, specifically focusing on customer experience (CX). 

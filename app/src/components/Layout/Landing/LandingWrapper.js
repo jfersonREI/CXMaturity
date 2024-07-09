@@ -1,8 +1,8 @@
 import React from "react";
-import "./LandingWrapper.scss";
+import styles from "./LandingWrapper.module.scss";
 
 const LandingWrapper = (props) => {
-  return <div className="landing-wrapper">{props.children}</div>;
+  return <div className={styles.landingWrapper}>{props.children}</div>;
 };
 
 export default LandingWrapper;

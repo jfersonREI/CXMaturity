@@ -1,7 +1,7 @@
 @import "../../../sassStyles/mixins";
 @import "../../../sassStyles/variables";
 
-.landing-wrapper {
+.landingWrapper {
   background-color: $color-white;
   padding: $space-400;
   border-radius: $border-radius-lg;
@@ -9,7 +9,6 @@
   display: flex;
   flex-flow: column wrap;
   gap: $unit-64;
-  align-self: stretch;
   margin-top: $space-0;
 
   @include mdMinBreakPoint {

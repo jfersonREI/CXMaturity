@@ -1,11 +1,11 @@
 import React from "react";
-import "./LandingCover.scss";
+import styles from "./LandingCover.module.scss";
 import LandingBadge from "./LandingBadge";
 
 const LandingCover = ({ badge, ...props }) => {
   return (
-    <div className="landing-cover">
-      <img src={props.image} alt={props.alt} className="landing-image" />
+    <div className={styles.landingCover}>
+      <img src={props.image} alt={props.alt} className={styles.landingImage} />
       <LandingBadge badge={badge} />
       {props.children}
     </div>

@@ -1,10 +1,10 @@
 import React from "react";
-import "./LandingBadge.scss";
+import styles from "./LandingBadge.module.scss";
 
 const LandingBadge = (props) => {
   return (
-    <div className="landing-badge">
-      <div className="landing-badge__badge">{props.badge}</div>
+    <div className={styles.landingBadge}>
+      <div className={styles.landingBadge__badge}>{props.badge}</div>
     </div>
   );
 };

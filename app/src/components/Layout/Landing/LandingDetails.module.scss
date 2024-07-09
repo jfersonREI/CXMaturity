@@ -1,11 +1,11 @@
 @import "../../../sassStyles/variables";
 
-.landing-details {
+.details {
   display: flex;
   flex-direction: column;
   gap: $unit-72;
   flex: 1 0 0;
-  align-self: stretch;
+  justify-content: space-between;
 
   &__header {
     background-color: transparent;
@@ -21,9 +21,8 @@
     align-items: flex-start;
     gap: $space-200;
     flex: 1 0 0;
-    align-self: stretch;
   }
-  &__body-header {
+  &__bodyHeader {
     display: flex;
     flex-direction: column;
     gap: $space-100;
@@ -61,14 +60,14 @@
     flex-flow: row wrap;
     gap: $space-700;
   }
-  &__footer-item {
+  &__footerItem {
     display: flex;
     flex-flow: column wrap;
     gap: $space-050;
     font-size: $font-size-text-sm;
     color: $color-neutral-slate-800;
   }
-  &__footer-item-header {
+  &__footerItemHeader {
     color: $color-secondary-purple-800;
     text-transform: uppercase;
     font-size: $font-size-text-xs;
