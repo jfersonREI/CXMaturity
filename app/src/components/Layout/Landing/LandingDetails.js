@@ -33,8 +33,6 @@ const LandingDetails = (props) => {
           <span>{props.dueDate}</span>
         </div>
       </div>
-
-      {props.children}
     </div>
   );
 };
