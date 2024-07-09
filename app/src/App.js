@@ -14,6 +14,7 @@ function App() {
             into project performance, specifically focusing on customer experience (CX). 
             Our project maturity assessment process ensures that every REI project is on the 
             right track. Let's elevate project success together!"
+        btnText="Take the CX maturity assessment"
         image={CoverImage}
         alt="CX Maturity Assessemnt"
         badge="CX"

@@ -17,6 +17,7 @@ const Landing = (props) => {
             copy={props.copy}
             timeComplete={props.timeComplete}
             dueDate={props.dueDate}
+            btnText={props.btnText}
           />
           <LandingCover
             image={props.image}

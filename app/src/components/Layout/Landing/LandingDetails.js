@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./LandingDetails.module.scss";
 
+import Button from "react-bootstrap/Button";
+
 const LandingDetails = (props) => {
   return (
     <div className={styles.details}>
@@ -18,7 +20,7 @@ const LandingDetails = (props) => {
         </div>
         <div className={styles.details__copy}>{props.copy}</div>
         <div className={styles.details__buttons}>
-          <button>Take the CX maturity assessment</button>
+          <Button variant="primary">{props.btnText}</Button>
         </div>
       </div>
       <div className={styles.details__footer}>
