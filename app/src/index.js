@@ -4,13 +4,17 @@ import "./sassStyles/_global.scss";
 import "./sassStyles/_typography.scss";
 
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import { RouterProvider } from 'react-router-dom';
+
+//import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+import router from "./router";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

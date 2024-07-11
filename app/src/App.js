@@ -1,8 +1,22 @@
+import { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { routePaths } from "./index.const";
+
+
 import Logo from "../src/assets/logo-rei.svg";
 import CoverImage from "./assets/landing/landing-cover.png";
 import Landing from "./components/Layout/Landing/Landing";
 
 function App() {
+
+  const navigate = useNavigate();
+  const handleClick = useCallback(() =>{
+    console.log("onclick")
+    navigate(routePaths.questions)
+  }, [navigate]);
+
+
   return (
     <div className="App">
       <Landing
@@ -20,6 +34,7 @@ function App() {
         badge="CX"
         timeComplete="15 minutes"
         dueDate="5/23/25"
+        onClick={handleClick}
       />
     </div>
   );
