@@ -3,7 +3,7 @@ export const ReportDescriptions = {
     overallScore: [
         {
             name: "Reactive",
-            description: "The project is in the initial of CX maturity. Fundamental elements of customer experience are either nonexistent or extremely underdeveloped"
+            description: "The project is in the initial CX maturity. Fundamental elements of customer experience are either nonexistent or extremely underdeveloped"
         },
          {
             name: "Tactical",
@@ -18,7 +18,7 @@ export const ReportDescriptions = {
             description: "The project is highly proficient in CX practices, with robust processes and strong integration of customer experience into business strategy and operations."
         },
          {
-            name: "Customer-centric",
+            name: "Customer-Centric",
             description: "The project excels in all areas of CX maturity, with comprehensive and advanced practices fully embedded in the organization, leading to continuous and proactive customer experience improvements."
         }
     ],

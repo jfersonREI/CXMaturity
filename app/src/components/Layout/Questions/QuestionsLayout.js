@@ -61,11 +61,11 @@ function QuestionsLayout() {
     return (
         <div className='d-flex justify-center items-center'>
             <div className="d-flex flex-column question-container bg-white mt-5 p-5 col-lg-6 mx-auto">
-                <h6 className="question-index text-info">Question {currentQuestion} of {assessment.questions.length}</h6>
-                <h3>Please read each statement carefully and indicate how much it applies to your project by selecting a number from 1 to 5.</h3>
+                <h6 className="question-index text-info"> {currentQuestion} of {assessment.questions.length}</h6>
 
+                <h3 className="question-text">{assessment.questions[currentQuestion - 1].question}</h3>
                 <hr className='shadow-lg' />
-                <p className="question-text">{assessment.questions[currentQuestion - 1].question}</p>
+                
                 <div className="d-flex justify-content-between">
                     {optionItems.map((option, optionIndex) => (
                         <div
@@ -78,17 +78,21 @@ function QuestionsLayout() {
                     ))}
                 </div>
                 <div className="d-flex justify-content-between align-item-center">
-                    <small className="rating-label text-center"> { assessment.questions[currentQuestion-1]?.type === 'type1'?'strongly disagree':'never' }  </small>
-                    <small className="rating-label text-center"> { assessment.questions[currentQuestion-1]?.type === 'type1'? 'disagree':'rarely'}</small>
-                    <small className="rating-label text-center"> { assessment.questions[currentQuestion-1]?.type === 'type1'? 'neutral':'sometimes'}</small>
-                    <small className="rating-label text-center"> { assessment.questions[currentQuestion-1]?.type === 'type1'?'agree': 'often'}</small>
-                    <small className="rating-label text-center "> { assessment.questions[currentQuestion-1]?.type === 'type1'?'strongly agree':'always'}</small>
+                    <small className="rating-label text-center"> { assessment.questions[currentQuestion-1]?.type === 'type1'?'Strongly Disagree':'Never' }  </small>
+                    <small className="rating-label text-center"> { assessment.questions[currentQuestion-1]?.type === 'type1'? 'Disagree':'Rarely'}</small>
+                    <small className="rating-label text-center"> { assessment.questions[currentQuestion-1]?.type === 'type1'? 'Neutral':'Sometimes'}</small>
+                    <small className="rating-label text-center"> { assessment.questions[currentQuestion-1]?.type === 'type1'?'Agree': 'Often'}</small>
+                    <small className="rating-label text-center "> { assessment.questions[currentQuestion-1]?.type === 'type1'?'Strongly Agree':'Always'}</small>
                 </div>
                 <hr className='my-4 shadow-sm' />
                 {(currentQuestion === assessment.questions.length) &&
                     <div className="comment-container">
                         <p>Additional comment (optional)</p>
                         <textarea className='w-100 p-1' placeholder='Enter text' value={comment} onChange={(e) => setComment(e.target.value)} />
+                            {  selectedOption && 
+                            (
+                            <p className='my-3  fw-bold' >Thank you for your participation! Your responses will help us identify areas for improvement and enhance our customer experience initiatives across all of REI’s projects.</p>
+                            )}
                     </div>}
                 {showError && <p className="error-message text-danger">Please select an option.</p>}
                 <div className='text-end'>
