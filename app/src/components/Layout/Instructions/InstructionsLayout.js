@@ -26,9 +26,8 @@ function InstructionsLayout() {
             <div className="d-flex flex-column  bg-white mt-5 p-5 col-lg-8 mx-auto instruction-content">
                 <h3 className="mb-3 text-center fs-4">Instructions</h3>
                 <div className="text-black" >
-                    <p className="fs-6" >Thank you for participating in our CX Maturity Review. Your insights are crucial in helping us understand and improve the implementation of customer experience (CX) principles across our projects.
-                        You will see 25 questions focusing on REI's CX Core Functions. Each question will ask you to assess how these functions relate to your project. Please read each statement carefully and indicate the extent to which it applies to your project on a scale from 1 to 5.</p>
-                    <p className="fs-6" >Your responses will help us assess how well your project supports these core functions and guide our efforts to enhance our customer experience practices at REI.</p>
+                    <p className="fs-6" >In this review you will see 25 questions focusing on REI's CX Core Functions. REI’s 5 CX Core Functions are shown below. Each question will ask you to assess how these functions relate to your project. Please indicate the extent to which it applies to your project on a scale from 1 to 5.</p>
+                    <p className="fs-6" > Your responses will help us assess how well your project supports these core functions and guide our efforts to enhance our customer experience practices at REI.</p>
                 </div>
 
                 <div className="d-flex justify-content-between align-items-start levels my-3 " >
@@ -47,7 +46,7 @@ function InstructionsLayout() {
                         </div>
                         <div className="p-1 mt-2" >
                             <h6 className="fw-bold level-name " >Measurement</h6>
-                            <p className="text-secondary level-description " >Collecting and analyzing data for customer-experience-related outcomes</p>
+                            <p className="text-secondary level-description fw-bold" >Collecting and analyzing data for customer-experience-related outcomes</p>
                         </div>
 
                     </div>
@@ -68,7 +67,7 @@ function InstructionsLayout() {
 
                         <div className="p-1 mt-2" >
                             <h6 className="fw-bold level-name " >Governance and Strategy</h6>
-                            <p className="text-secondary level-description  " >Institutionalizing CX by holding agency leaders accountable, defining processes and aligning business initiatives </p>
+                            <p className="text-secondary level-description fw-bold " >Institutionalizing CX by holding agency leaders accountable, defining processes and aligning business initiatives </p>
                         </div>
 
                     </div>
@@ -91,7 +90,7 @@ function InstructionsLayout() {
                         </div>
                         <div className="p-1 mt-2" >
                             <h6 className="fw-bold level-name " >Culture and Organization</h6>
-                            <p className="text-secondary level-description  " >Hiring CX experts and supporting human-centered design (HCD) tools and processes</p>
+                            <p className="text-secondary level-description fw-bold " >Hiring CX experts and supporting human-centered design (HCD) tools and processes</p>
                         </div>
 
                     </div>
@@ -111,7 +110,7 @@ function InstructionsLayout() {
                         </div>
                         <div className="p-1 mt-2" >
                             <h6 className="fw-bold level-name " >Customer Understanding</h6>
-                            <p className="text-secondary level-description  " >Collecting qualitative and quantitative data about customer needs and customer journeys </p>
+                            <p className="text-secondary level-description fw-bold " >Collecting qualitative and quantitative data about customer needs and customer journeys </p>
                         </div>
                     </div>
 
@@ -125,13 +124,13 @@ function InstructionsLayout() {
                         </div>
                         <div className="p-1 mt-2" >
                             <h6 className="fw-bold level-name " >Service Design and Improvement</h6>
-                            <p className="text-secondary level-description  " >Fixing broken services and introducing new ones, always with customers and their needs at the center of development </p>
+                            <p className="text-secondary level-description fw-bold " >Fixing broken services and introducing new ones, always with customers and their needs at the center of development </p>
                         </div>
                     </div>
                 </div>
                     <div className='d-flex justify-content-between'>
                         <button type='button' className="next-question-btn p-2 mt-4 w-25 s rounded-1 border-0 text-white" onClick={handleGoBackClick}>
-                            Go Back
+                            Previous
                         </button>
                         <button type='button' className="next-question-btn p-2 mt-4 w-25 s rounded-1 border-0 text-white"  onClick={handleBeginClick} >
                             Begin
