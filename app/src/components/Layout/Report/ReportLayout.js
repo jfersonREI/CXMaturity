@@ -288,4 +288,3 @@ function ReportLayout() {
 }
 
 export default ReportLayout;
-

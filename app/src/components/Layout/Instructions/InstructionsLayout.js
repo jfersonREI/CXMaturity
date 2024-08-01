@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
     MEASUREMENT_ICON_PATH,
     GOVERNANCE_ICON_PATH,
@@ -13,13 +13,21 @@ import {
 
 import './style.scss'
 function InstructionsLayout() {
+    const navigate = useNavigate();
+    const handleGoBackClick = ()=>{
+        navigate('/');
+    }
+
+    const handleBeginClick = ()=>{
+        navigate('/questions');
+    }
     return (
         <div className='d-flex justify-center items-center'>
             <div className="d-flex flex-column  bg-white mt-5 p-5 col-lg-8 mx-auto instruction-content">
                 <h3 className="mb-3 text-center fs-4">Instructions</h3>
                 <div className="text-black" >
                     <p className="fs-6" >Thank you for participating in our CX Maturity Review. Your insights are crucial in helping us understand and improve the implementation of customer experience (CX) principles across our projects.
-                    You will see 25 questions focusing on REI's CX Core Functions. Each question will ask you to assess how these functions relate to your project. Please read each statement carefully and indicate the extent to which it applies to your project on a scale from 1 to 5.</p>
+                        You will see 25 questions focusing on REI's CX Core Functions. Each question will ask you to assess how these functions relate to your project. Please read each statement carefully and indicate the extent to which it applies to your project on a scale from 1 to 5.</p>
                     <p className="fs-6" >Your responses will help us assess how well your project supports these core functions and guide our efforts to enhance our customer experience practices at REI.</p>
                 </div>
 
@@ -121,13 +129,14 @@ function InstructionsLayout() {
                         </div>
                     </div>
                 </div>
-                <Link to="/questions">
-                    <div className='text-end'>
-                        <button type='button' className="next-question-btn p-2 mt-4 w-25 s rounded-1 border-0 text-white">
+                    <div className='d-flex justify-content-between'>
+                        <button type='button' className="next-question-btn p-2 mt-4 w-25 s rounded-1 border-0 text-white" onClick={handleGoBackClick}>
+                            Go Back
+                        </button>
+                        <button type='button' className="next-question-btn p-2 mt-4 w-25 s rounded-1 border-0 text-white"  onClick={handleBeginClick} >
                             Begin
                         </button>
                     </div>
-                </Link>
             </div>
         </div>
     );
